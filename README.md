@@ -14,6 +14,10 @@ api:
 https://docs.github.com/en/rest/repos/rules?apiVersion=2022-11-28#update-a-repository-ruleset
 
 
+## Notes
+
+`Only visible teams can be added as reviewers.`
+
 ## API get ruleset
 ```
 curl -L --header 'Accept: application/vnd.github+json' --header 'X-GitHub-Api-Version: 2022-11-28' https://api.github.com/repos/jan-thomas-m/ruletestrepo/rulesets/11980045 > ruleset-test1.json
@@ -56,3 +60,7 @@ Rules
 - required_signatures
 
 ```
+
+## Security
+
+See [.github/SECURITY.md](.github/SECURITY.md) (from https://github.com/standard/.github/blob/master/SECURITY.md)
